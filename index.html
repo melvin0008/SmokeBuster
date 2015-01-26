@@ -4,72 +4,21 @@
           <meta name="viewport" content="user-scalable=no,initial-scale=1.0">
           <link  rel="stylesheet" type="text/css" href="css/bbui-min.css"></link>
           <link  rel="stylesheet" type="text/css" href="css/all.css"></link>
-          <script type="text/javascript" src="local:///chrome/webworks.js"></script>
+          <script src="cordova.js" type="text/javascript" ></script>
           <script type="text/javascript" src="js/bbui-min.js"></script>
-
           <script type="text/javascript" src="js/all.js"></script>
+          <script type="text/javascript" src="js/splash.js"></script>
+          <script type="text/javascript" src="js/benefits.js"></script>
+          <script type="text/javascript" src="js/records.js"></script>
+          <script type="text/javascript" src="js/settings.js"></script>
+          <script type="text/javascript" src="js/track.js"></script>
+          <script type="text/javascript" src="js/reports.js"></script>
+          <script type="text/javascript" src="js/achieve.js"></script>
+          <script type="text/javascript" src="js/app.js"></script>
+    <!--        <script type="text/javascript" src="js/app.js"></script> -->
           <script type="text/javascript" src="js/flotr2-min.js"></script>
-          
           <script type="text/javascript">
-          document.addEventListener('webworksready', function(e) {
-         
-            //available parameters https://github.com/blackberry/bbUI.js/wiki/Toolkit-Initialization
-            bb.init({
-              ondomready: function(element, id, params) {
-            
-                    if(id == 'settings') {
-                      settings.init();
-                                 
-                  }
-                  else if (id == 'track') {
-                    track.init();
-                   }
-                   else if (id == 'records') {
-                    records.init();
-                   }
-                   else if(id == 'report')
-                    {
-                      reports.init();
-                    }
-                    else if(id == 'achieve')
-                    {
-                      achieve.init();
-                    }
-                    else if(id == 'benefits')
-                    {
-                      benefit.init();
-                    }
-                    else if(id == 'splashScreen')
-                    {
-                      splash.init();
-                    }
-
-                  },
-                  onscreenready : function(element, id, params)
-                  {
-
-                   
-                        window.onorientationchange=function()
-                        {
-                             if (id=='report') {
-                          reports.init();
-                          };
-                        }
-                      
-                    
-                  }
-              });
-            initapp();
-              if(JSON.parse(localStorage.getItem('first'))==null)
-              {
-               bb.pushScreen('settings.html', 'settings'); 
-              }
-              else
-              {
-            bb.pushScreen('splash.html', 'splashScreen');
-          }
-          }, false);
-        
+              Application.initialize();
           </script>
       </head>
       <body>

@@ -6,10 +6,9 @@
 		 <div data-bb-type="menu-item" data-bb-img="images/invite.png" onclick="bbm.inviteToDownload();">Invite</div>
           <div data-bb-type="menu-item" data-bb-img="images/config.png" onclick="bb.pushScreen('settings.html', 'settings');">SETTINGS</div>
   </div>
- 
-   
+
 	<div data-bb-type='image-list'  >
-		<div data-bb-type='item' data-bb-title='Last Smoked On' id='ilist' data-bb-img="images/nosmokin.png">
+		<div data-bb-type='item' data-bb-title='Quit Date' id='ilist' data-bb-img="images/nosmokin.png">
 			<span id="lastsmokedon" style="font-size:60pt;"></span>
 		</div>
 		<div data-bb-type='item' data-bb-title='Days since last smoked' id='ilist' data-bb-img="images/day.png">
@@ -18,7 +17,6 @@
 			<span id='days_saved_mins' style="font-size:60pt;"></span>mins
 		</div>
 
-    
 		<div data-bb-type='item' data-bb-title='Time Saved' id='ilist' data-bb-img="images/time.png">
 			<span id='time_saved_hrs' style="font-size:60pt;"></span>hrs
 			<span id='time_saved_mins' style="font-size:60pt;"></span>mins
@@ -44,9 +42,7 @@
         <div data-bb-type="action" data-bb-style="tab" data-bb-overflow="true" data-bb-img="images/report.png" onclick="bb.pushScreen('report.html', 'report');">Report</div>
         <div data-bb-type="action" data-bb-style="tab" data-bb-overflow="true" data-bb-img="images/ic_favorite.png" onclick="bb.pushScreen('achievements.html', 'achieve');">MileStones</div>
         <div data-bb-type="action" data-bb-style="tab" data-bb-overflow="true" data-bb-img="images/ic_benefits.png"  onclick="bb.pushScreen('benefits.html', 'benefits');">Benefits</div>
-        <div data-bb-type="action" data-bb-style="button" data-bb-img="images/share.png"  onclick="shareTextMockingSelection();">Share
+        <div data-bb-type="action" data-bb-style="button" data-bb-img="images/share.png"  onclick="track.shareTextMockingSelection();">Share
         </div>
-     </div>   
-
-         
+     </div>
 </div>

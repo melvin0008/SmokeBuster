@@ -7,31 +7,26 @@
           <div data-bb-type="menu-item" data-bb-img="images/config.png" onclick="bb.pushScreen('settings.html', 'settings');">SETTINGS</div>
   </div>
 	<div data-bb-type="round-panel">
-        
         <div data-bb-type="label-control-container" id='crav'>
                 <div data-bb-type="label"  style="font-size:50px text-align:center;">TIME LEFT</div>
                 <span id='craving' style="font-size:130px;" ></span> mins:
                 <span id='craving_s' style="font-size:130px;" ></span> sec
 
-        
         </div>
-   
- 
-    <div data-bb-type='button'  onclick='records.start();' >
-            <span id ='butt'>START</span>
+    <div data-bb-type='button' data-bb-style='stretch' onclick='records.start();' >
+            <span id ='butt'>START</span> 
         </div>
         <div data-bb-type='button' id='but' data-bb-style='stretch' onclick='records.stop();'>ITS OVER!</div>
-      
         <div data-bb-type='button' id='but'data-bb-style='stretch'   onclick='records.giveup();'>I SMOKED</div>
         <br>
  <div data-bb-type="bbm-bubble" data-bb-style="right" id='bbmb'>
-        <div data-bb-type="item" data-bb-img="images/bullet.png">I'm getting an urge to smoke!!!!What do i do?????</div>   
+        <div data-bb-type="item" data-bb-img="images/bullet.png">I'm getting an urge to smoke!!!!What do i do?????</div>
     </div>
 
     <div data-bb-type="bbm-bubble" data-bb-style="left" id='bbmb'>
-        <div data-bb-type="item" data-bb-img="images/bullet.png">Go for a walk.A change of environment will do wonders!!</div> 
+        <div data-bb-type="item" data-bb-img="images/bullet.png">Go for a walk.A change of environment will do wonders!!</div>
         <div data-bb-type="item" data-bb-img="images/bullet.png">Read a book .Solve a crossword puzzle</div>
-        <div data-bb-type="item" data-bb-img="images/bullet.png">Review your progress!!! Do you really want to undo all that effort??</div>  
+        <div data-bb-type="item" data-bb-img="images/bullet.png">Review your progress!!! Do you really want to undo all that effort??</div>
         <div data-bb-type="item" data-bb-img="images/bullet.png">My Favorite-You can press the button below and talk to your Best Friend.!</div>
     </div>
 
@@ -42,15 +37,9 @@
 		<div data-bb-type="action" data-bb-style="tab" data-bb-overflow="true" data-bb-img="images/track.png"  onclick="bb.pushScreen('track.html', 'track');">Stats</div>
 		<div data-bb-type="action" data-bb-style="tab" data-bb-overflow="true" data-bb-img="images/records.png" data-bb-selected="true"  onclick="bb.pushScreen('records.html', 'records');">Craving</div>
         <div data-bb-type="action" data-bb-style="tab" data-bb-overflow="true" data-bb-img="images/report.png"  onclick="bb.pushScreen('report.html', 'report');">Report</div>
-        <div data-bb-type="action" data-bb-style="tab" data-bb-overflow="true" data-bb-img="images/ic_favorite.png"  onclick="bb.pushScreen('achievements.html', 'achieve');">MileStones</div>     
+        <div data-bb-type="action" data-bb-style="tab" data-bb-overflow="true" data-bb-img="images/ic_favorite.png"  onclick="bb.pushScreen('achievements.html', 'achieve');">MileStones</div>
         <div data-bb-type="action" data-bb-style="tab" data-bb-overflow="true" data-bb-img="images/ic_benefits.png"  onclick="bb.pushScreen('benefits.html', 'benefits');">Benefits</div>
-        <div data-bb-type="action" data-bb-style="button" data-bb-img="images/call.png"  onclick="share.call();">Call your Bestie!!
+        <div data-bb-type="action" data-bb-style="button" data-bb-img="images/call.png"  onclick="records.call();">Call your Bestie!!
         </div>
 	</div>
-
-
-    
-
-
-
 </div>
