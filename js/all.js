@@ -15,12 +15,11 @@ settings.init=function()
 	{
 	document.getElementById('new').hide();
 	}
-	console.log(track.started);	
+	console.log(track.started);
 };
 
 settings.no_of_times=function(){
 	var selected=document.getElementById('check');
-	
 	if(selected.checked)
 	{
 		document.getElementById('new').show();
@@ -49,7 +48,6 @@ settings.validate=function(){
  	   	var phone=document.getElementById('phone').value;
  	   	var period=document.getElementById('period').value;
         var time_count=document.getElementById('time_count').value;
- 	   	
  	   	localStorage.setItem('cig_count', cig_count);
  	   	localStorage.setItem('pac_count', pac_count);
  	   	localStorage.setItem('cost_one',cost_one);
@@ -68,7 +66,6 @@ track.init=function()
     document.getElementById('days_saved_days').innerHTML=Math.round((diff/3600)/24);
 	document.getElementById('days_saved_hrs').innerHTML=Math.round((diff/3600)%24);
 	document.getElementById('days_saved_mins').innerHTML=Math.round((diff/60)%60);
- 
     var days= track.no_of_days(track.started,end);
     var time_count=localStorage.getItem('time_count');
     var total_time=days*time_count;
@@ -99,11 +96,9 @@ records.init=function()
         records.start();
     }
     console.log("Im back");
-    
 
 }
 records.start=function(){
-    
     if(records.tracking!=1 )
     {
             if(records.tracking!=3)
@@ -120,15 +115,14 @@ records.start=function(){
                 records.elapsed = Math.floor(time / 1000) ;
                 var maxtime=localStorage.getItem('period');
                 records.elapsed=(maxtime*60)-records.elapsed;
-                if(Math.round(records.elapsed) == records.elapsed) 
-                { 
-                    records.elapsed += ''; 
+                if(Math.round(records.elapsed) == records.elapsed)
+                {
+                    records.elapsed += '';
                  }
                  if(records.elapsed==0)
                 {
                     clearInterval(inter);
                     document.getElementById('records').refresh();
-                        
                 }
 
                 document.getElementById('craving').innerHTML = Math.floor(records.elapsed/60);
@@ -137,7 +131,7 @@ records.start=function(){
                 }, 1000);
             }
             else
-            {   
+            {
                 records.tracking=1;
                 document.getElementById('butt').innerHTML="PAUSE"
                 var start = new Date().getTime();
@@ -147,17 +141,15 @@ records.start=function(){
                 var time = new Date().getTime() - start;
 
                 records.elapsed = Math.floor(time / 1000) ;
-                
                 records.elapsed=max-records.elapsed;
-                if(Math.round(records.elapsed) == records.elapsed) 
-                { 
-                    records.elapsed += ''; 
+                if(Math.round(records.elapsed) == records.elapsed)
+                {
+                    records.elapsed += '';
                  }
                  if(records.elapsed==0)
                 {
                     clearInterval(inter);
                     document.getElementById('records').refresh();
-                        
                 }
 
                 document.getElementById('craving').innerHTML = Math.floor(records.elapsed/60);
@@ -185,12 +177,12 @@ records.stop=function(){
     localStorage.setItem('points',points_earned);
     blackberry.ui.dialog.standardAskAsync('Hurray!!!!',blackberry.ui.dialog.D_OK,null,{title:'Congrats!!'});
         bb.pushScreen('track.html','track');
-  //  bb.pushScreen('records.html','records');   
+  //  bb.pushScreen('records.html','records');
 }
 records.restart=function(){
     clearInterval(inter);
     records.tracking=2;
-    bb.pushScreen('records.html','records');  
+    bb.pushScreen('records.html','records');
 }
 records.onyes=function(){
 
@@ -230,7 +222,7 @@ reports.basic_bars=function(){
   graph = Flotr.draw(container, [ d1, d2 ], {
     xaxis: {
       minorTickFreq: 4
-    }, 
+    },
     grid: {
       minorVerticalLines: true
     }

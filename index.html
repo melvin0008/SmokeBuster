@@ -8,17 +8,13 @@
           <script type="text/javascript" src="js/bbui-min.js"></script>
           <script type="text/javascript" src="js/all.js"></script>
           <script type="text/javascript" src="js/flotr2-min.js"></script>
-          
           <script type="text/javascript">
           document.addEventListener('webworksready', function(e) {
-           
             //available parameters https://github.com/blackberry/bbUI.js/wiki/Toolkit-Initialization
             bb.init({
               ondomready: function(element, id, params) {
-                    
                     if(id == 'settings') {
                       settings.init();
-                                 
                   }
                   else if (id == 'track') {
                     track.init();
@@ -34,7 +30,6 @@
                   }
               });
 
-              
             bb.pushScreen('track.html', 'track');
           }, false);
           </script>
