@@ -1,37 +1,52 @@
 <!DOCTYPE html>
-<div data-bb-type="screen" data-bb-indicator="true" data-bb-effect ="fade">
+<div data-bb-type="screen" data-bb-indicator="true" data-bb-effect ="fade" id='track'>
 	<div data-bb-type="title" data-bb-caption="STATS" ></div>
 	<div data-bb-type="menu">
+		<div data-bb-type="menu-item" data-bb-img="images/info.png" onclick="bb.pushScreen('info.html', 'info');">About</div>
+		 <div data-bb-type="menu-item" data-bb-img="images/invite.png" onclick="bbm.inviteToDownload();">Invite</div>
           <div data-bb-type="menu-item" data-bb-img="images/config.png" onclick="bb.pushScreen('settings.html', 'settings');">SETTINGS</div>
   </div>
-	<div data-bb-type='image-list' data-bb-images="none" >
-		<div data-bb-type='item' data-bb-title='Last Smoked On' id='ilist'>
-			<span id='last_smoked_on' style="font-size:60pt;"></span>
+ 
+   
+	<div data-bb-type='image-list'  >
+		<div data-bb-type='item' data-bb-title='Last Smoked On' id='ilist' data-bb-img="images/nosmokin.png">
+			<span id="lastsmokedon" style="font-size:60pt;"></span>
 		</div>
-		<div data-bb-type='item' data-bb-title='Days since last smoked' id='ilist'>
-			<span id='days_saved_days' style="font-size:70pt;"></span>days
-			<span id='days_saved_hrs' style="font-size:70pt;"></span>hrs
-			<span id='days_saved_mins' style="font-size:70pt;"></span>mins
-		</div>
-		<div data-bb-type='item' data-bb-title='Time Saved' id='ilist'>
-			<span id='time_saved_hrs' style="font-size:70pt;"></span>hrs
-			<span id='time_saved_mins' style="font-size:70pt;"></span>mins
+		<div data-bb-type='item' data-bb-title='Days since last smoked' id='ilist' data-bb-img="images/day.png">
+			<span id="days_saved_days" style="font-size:60pt;"></span>days
+			<span id='days_saved_hrs' style="font-size:60pt;"></span>hrs
+			<span id='days_saved_mins' style="font-size:60pt;"></span>mins
 		</div>
 
-		<div data-bb-type='item' data-bb-title='Money Saved' id='ilist'>
-			<span id='money_saved' style="font-size:65pt;"></span>
+    
+		<div data-bb-type='item' data-bb-title='Time Saved' id='ilist' data-bb-img="images/time.png">
+			<span id='time_saved_hrs' style="font-size:60pt;"></span>hrs
+			<span id='time_saved_mins' style="font-size:60pt;"></span>mins
 		</div>
-		<div data-bb-type='item' data-bb-title='Cravings Skipped' id='ilist'>
-			<span id='cravings_skipped' style="font-size:65pt;"></span>
+
+		<div data-bb-type='item' data-bb-title='Money Saved' id='ilist' data-bb-img="images/money.png">
+			<span id='money_saved' style="font-size:60pt;"></span><span id='currency' ></span>
 		</div>
-		<div data-bb-type='item' data-bb-title='Points Earned' id='ilist'>
-			<span id='points' style="font-size:65pt;"></span>
+		<div data-bb-type='item' data-bb-title='Cravings Skipped' id='ilist' data-bb-img="images/skip.png">
+			<span id='cravings_skipped' style="font-size:60pt;"></span>
+		</div>
+		<div data-bb-type='item' data-bb-title='Points Earned' id='ilist' data-bb-img="images/points.png">
+			<span id='points' style="font-size:60pt;"></span>
+		</div>
+		<div data-bb-type='item' data-bb-title='Health Improved By' id='ilist' data-bb-img="images/health.png">
+			<span id='health' style="font-size:60pt;"></span>%
 		</div>
 	</div>
-	<div data-bb-type="action-bar" data-bb-back-caption="Back">
-		<div data-bb-type="action" data-bb-style="tab" data-bb-img="images/track.png" data-bb-selected="true" onclick="bb.pushScreen('track.html', 'track');">Track Time</div>
-		<div data-bb-type="action" data-bb-style="tab" data-bb-img="images/records.png" onclick="bb.pushScreen('records.html', 'records');">Records</div>
-        <div data-bb-type="action" data-bb-style="tab" data-bb-img="images/report.png" onclick="bb.pushScreen('report.html', 'report');">Report</div>
-        <div data-bb-type="action" data-bb-style="tab" data-bb-img="images/ic_favorite.png" onclick="bb.pushScreen('achievements.html', 'achieve');">Achievements</div>
-           
+	<div data-bb-type="action-bar" >
+		<div data-bb-type="action" data-bb-style="tab" data-bb-overflow="true" data-bb-img="images/menu.png"  onclick="bb.pushScreen('splash.html',' splashScreen');">MainScreen</div>
+		<div data-bb-type="action" data-bb-style="tab" data-bb-overflow="true" data-bb-img="images/track.png"  data-bb-selected="true" onclick="bb.pushScreen('track.html', 'track');">Stats</div>
+		<div data-bb-type="action" data-bb-style="tab" data-bb-overflow="true" data-bb-img="images/records.png" onclick="bb.pushScreen('records.html', 'records');">Craving</div>
+        <div data-bb-type="action" data-bb-style="tab" data-bb-overflow="true" data-bb-img="images/report.png" onclick="bb.pushScreen('report.html', 'report');">Report</div>
+        <div data-bb-type="action" data-bb-style="tab" data-bb-overflow="true" data-bb-img="images/ic_favorite.png" onclick="bb.pushScreen('achievements.html', 'achieve');">MileStones</div>
+        <div data-bb-type="action" data-bb-style="tab" data-bb-overflow="true" data-bb-img="images/ic_benefits.png"  onclick="bb.pushScreen('benefits.html', 'benefits');">Benefits</div>
+        <div data-bb-type="action" data-bb-style="button" data-bb-img="images/share.png"  onclick="shareTextMockingSelection();">Share
+        </div>
+     </div>   
+
+         
 </div>

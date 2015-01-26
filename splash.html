@@ -1,0 +1,27 @@
+<div id="splashScreen"
+	data-bb-type="screen" data-bb-indicator="true">
+	<div data-bb-type="menu">
+		<div data-bb-type="menu-item" data-bb-img="images/info.png" onclick="bb.pushScreen('info.html', 'info');">About</div>
+         <div data-bb-type="menu-item" data-bb-img="images/invite.png" onclick="bbm.inviteToDownload();">Invite</div>
+          <div data-bb-type="menu-item" data-bb-img="images/config.png" onclick="bb.pushScreen('settings.html', 'settings');">SETTINGS</div>
+  </div>
+
+	<link rel="stylesheet" href="css/splash.css"/>
+
+	<div id="splashContent">
+		<div id="mainTitle">
+			SMOKEBUSTER!!
+		</div>
+		<div id="subTitle">
+			Kill It Before It Kills You!
+		</div>
+	</div>
+
+	<div data-bb-type="action-bar" >
+		<div data-bb-type="action" data-bb-style="button" data-bb-img="images/track.png"  onclick="bb.pushScreen('track.html','track');">Stats</div>
+		<div data-bb-type="action" data-bb-style="button" data-bb-img="images/records.png"  onclick="bb.pushScreen('records.html', 'records');">Craving</div>
+        <div data-bb-type="action" data-bb-style="button" data-bb-img="images/ic_favorite.png"  onclick="bb.pushScreen('achievements.html', 'achieve');">MileStones</div>
+        <div data-bb-type="action" data-bb-style="button" data-bb-img="images/ic_benefits.png"  onclick="bb.pushScreen('benefits.html', 'benefits');">Benefits</div>
+	</div>
+</div>
+

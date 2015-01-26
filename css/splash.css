@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: 'Irish Grover';
+	font-style: normal;
+	font-weight: normal;
+	src: url('../fonts/IrishGrover.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Philosopher';
+	font-style: normal;
+	font-weight: normal;
+	src: url('../fonts/Philosopher.woff') format('woff');
+}
+
+#splashScreen {
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: top left;
+}
+
+#mainTitle {
+	font-family: 'Irish Grover', serif;
+	font-style: normal;
+	font-weight: normal;
+	color: #fff;
+	text-shadow: 4px 4px 4px #000066;
+}
+
+#subTitle {
+	position: fixed;
+	font-family: 'Philosopher', sans-serif;
+	color: #fff;
+	text-shadow: 2px 2px 4px #0d1ca1;
+}
+
+
+
+@media screen and (orientation: portrait) {
+	#splashScreen {
+	background: transparent url('../images/splash-1280x768.png');
+}
+
+	#mainTitle {
+		font-size: 95px;
+		-webkit-transform: skew(-15deg) rotate(-7deg) translate(70px, 275px);
+	}
+
+	#subTitle {
+		-webkit-transform: rotate(-7deg);
+		font-size: 25px;
+		left: 80px;
+		top: 410px;
+	}
+}
+
+
+@media screen and (orientation: landscape) {
+
+
+	#splashScreen {
+	background: transparent url('../images/side.png');
+	}
+	#mainTitle {
+		font-size: 150px;
+		-webkit-transform: skew(-15deg) rotate(-7deg) translate(70px, 125px);
+	}
+
+	#subTitle {
+		-webkit-transform: rotate(-7deg);
+		font-size: 35px;
+		left: 200px;
+		top: 300px;
+	}
+}
+
+@media screen and (max-width: 720px) and (max-height: 720px)   {
+	#splashScreen {
+		background: transparent url('../images/splash-720x720.png');
+	}
+	#mainTitle {
+		font-size: 95px;
+		-webkit-transform: skew(-15deg) rotate(-7deg) translate(70px, 275px);
+	}
+
+	#subTitle {
+		-webkit-transform: rotate(-7deg);
+		font-size: 25px;
+		left: 80px;
+		top: 410px;
+	}
+}

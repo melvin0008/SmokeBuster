@@ -1,32 +1,21 @@
 <div data-bb-type="screen" data-bb-indicator="true" id='achieve'> 
-	<div data-bb-type="title" data-bb-caption="Accomplishments" ></div>
+	<div data-bb-type="title" data-bb-caption="MILESTONES" ></div>
 <div data-bb-type="menu">
+        <div data-bb-type="menu-item" data-bb-img="images/info.png" onclick="bb.pushScreen('info.html', 'info');">About</div>
+          <div data-bb-type="menu-item" data-bb-img="images/invite.png" onclick="bbm.inviteToDownload();">Invite</div>
           <div data-bb-type="menu-item" data-bb-img="images/config.png" onclick="bb.pushScreen('settings.html', 'settings');">SETTINGS</div>
   </div> 
-  <div data-bb-type='image-list'  >
-  	<div data-bb-type='item' data-bb-title=''data-bb-img="images/trophy.png" >
-  	</div>
-  	<div data-bb-type='item' data-bb-title='' data-bb-img="images/trophy.png">
-  	</div>
-  	<div data-bb-type='item' data-bb-title='' data-bb-img="images/trophy.png">
-  	</div>
-  	<div data-bb-type='item' data-bb-title='' data-bb-img="images/trophy.png">
-  	</div>
-  	<div data-bb-type='item' data-bb-title='' data-bb-img="images/trophy.png">
-  	</div>
-  	<div data-bb-type='item' data-bb-title='' data-bb-img="images/trophy.png">
-  	</div>
-  	<div data-bb-type='item' data-bb-title='' data-bb-img="images/trophy.png">
-  	</div>
-  	<div data-bb-type='item' data-bb-title='' data-bb-img="images/trophy.png">
-  	</div>
-  	<div data-bb-type='item' data-bb-title='' data-bb-img="images/trophy.png">
-  	</div>
+  <div data-bb-type='image-list' id='mylist'  >
+  	
   </div>	
     <div data-bb-type="action-bar" data-bb-back-caption="Back">
-		<div data-bb-type="action" data-bb-style="tab" data-bb-img="images/track.png"  onclick="bb.pushScreen('track.html','track');">Track Time</div>
-		<div data-bb-type="action" data-bb-style="tab" data-bb-img="images/records.png"  onclick="bb.pushScreen('records.html', 'records');">Records</div>
-        <div data-bb-type="action" data-bb-style="tab" data-bb-img="images/report.png"  onclick="bb.pushScreen('report.html', 'report');">Report</div>
-        <div data-bb-type="action" data-bb-style="tab" data-bb-img="images/ic_favorite.png" data-bb-selected="true" onclick="bb.pushScreen('achievements.html', 'achieve');">Achievements</div>
+    <div data-bb-type="action" data-bb-style="tab" data-bb-overflow="true" data-bb-img="images/menu.png"  onclick="bb.pushScreen('splash.html', 'splashScreen');">MainScreen</div>
+		<div data-bb-type="action" data-bb-style="tab" data-bb-overflow="true"  data-bb-img="images/track.png"  onclick="bb.pushScreen('track.html','track');">Stats</div>
+		<div data-bb-type="action" data-bb-style="tab" data-bb-overflow="true"  data-bb-img="images/records.png"  onclick="bb.pushScreen('records.html', 'records');">Craving</div>
+        <div data-bb-type="action" data-bb-style="tab" data-bb-overflow="true"  data-bb-img="images/report.png"  onclick="bb.pushScreen('report.html', 'report');">Report</div>
+        <div data-bb-type="action" data-bb-style="tab" data-bb-overflow="true"  data-bb-img="images/ic_favorite.png" data-bb-selected="true" onclick="bb.pushScreen('achievements.html', 'achieve');">MileStones</div>
+        <div data-bb-type="action" data-bb-style="tab" data-bb-overflow="true"  data-bb-img="images/ic_benefits.png"  onclick="bb.pushScreen('benefits.html', 'benefits');">Benefits</div>
+        <div data-bb-type="action" data-bb-style="button" data-bb-img="images/share.png"  onclick="achieve.shareTextMockingSelection();">Share
+        </div>
 	</div>
 </div>
