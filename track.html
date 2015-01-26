@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<div data-bb-type="screen" data-bb-indicator="true" data-bb-effect ="fade">
+	<div data-bb-type="title" data-bb-caption="STATS" ></div>
+	<div data-bb-type="menu">
+          <div data-bb-type="menu-item" data-bb-img="images/config.png" onclick="bb.pushScreen('settings.html', 'settings');">SETTINGS</div>
+  </div>
+	<div data-bb-type='image-list' data-bb-images="none" >
+		<div data-bb-type='item' data-bb-title='Last Smoked On' id='ilist'>
+			<span id='last_smoked_on' style="font-size:60pt;"></span>
+		</div>
+		<div data-bb-type='item' data-bb-title='Days since last smoked' id='ilist'>
+			<span id='days_saved_days' style="font-size:70pt;"></span>days
+			<span id='days_saved_hrs' style="font-size:70pt;"></span>hrs
+			<span id='days_saved_mins' style="font-size:70pt;"></span>mins
+		</div>
+		<div data-bb-type='item' data-bb-title='Time Saved' id='ilist'>
+			<span id='time_saved_hrs' style="font-size:70pt;"></span>hrs
+			<span id='time_saved_mins' style="font-size:70pt;"></span>mins
+		</div>
+
+		<div data-bb-type='item' data-bb-title='Money Saved' id='ilist'>
+			<span id='money_saved' style="font-size:65pt;"></span>
+		</div>
+		<div data-bb-type='item' data-bb-title='Cravings Skipped' id='ilist'>
+			<span id='cravings_skipped' style="font-size:65pt;"></span>
+		</div>
+		<div data-bb-type='item' data-bb-title='Points Earned' id='ilist'>
+			<span id='points' style="font-size:65pt;"></span>
+		</div>
+	</div>
+	<div data-bb-type="action-bar" data-bb-back-caption="Back">
+		<div data-bb-type="action" data-bb-style="tab" data-bb-img="images/track.png" data-bb-selected="true" onclick="bb.pushScreen('track.html', 'track');">Track Time</div>
+		<div data-bb-type="action" data-bb-style="tab" data-bb-img="images/records.png" onclick="bb.pushScreen('records.html', 'records');">Records</div>
+        <div data-bb-type="action" data-bb-style="tab" data-bb-img="images/report.png" onclick="bb.pushScreen('report.html', 'report');">Report</div>
+        <div data-bb-type="action" data-bb-style="tab" data-bb-img="images/ic_favorite.png" onclick="bb.pushScreen('achievements.html', 'achieve');">Achievements</div>
+           
+</div>

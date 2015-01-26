@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<div data-bb-type="screen" data-bb-indicator="true" id='settings'>
+  <div data-bb-type="menu">
+          <div data-bb-type="menu-item" data-bb-img="images/ic_reload.png" onclick="alert('Are you sure?')">RESET</div>
+  </div>
+	<div data-bb-type="round-panel">
+		<div data-bb-type="panel-header">SETTINGS</div>
+		<div  data-bb-type="label-control-container">
+			<div data-bb-type="row">
+               <div data-bb-type="label">Number of packets per day</div><input id="pac_count" type="number" />
+            </div>
+            <div data-bb-type="row">
+               <div data-bb-type="label">Number of Cigarettes in one packet</div><input id="cig_count" type="number" />
+            </div>
+              <div data-bb-type="row">
+               <div data-bb-type="label">Time Spent in one day for smoking</div><input id="time_count" type="number" Placeholder='in mins' />
+            </div>
+            <div data-bb-type="row">
+               <div data-bb-type="label">Cost of One Packet
+               </div><input id="cost_one" type="number" />
+            </div>
+            <div data-bb-type="row">
+                <div data-bb-type="label">Phone no of Most valuable friend
+               </div><input id="phone" type="tel" />
+            </div>
+            <div data-bb-type="row">
+                <div data-bb-type="label">Your Craving Period
+               </div><select id ='period'>
+                      <option value="2" selected="true" >Dat should be quick!! -2mins</option>
+                      <option value="3">Dont worry!!!! - 3mins</option>
+                      <option value="5">Common just be determined! -5mins</option>
+                      <option value="10">U will succeed!! -10mins</option>
+                    </select>
+            </div>
+            
+            <input id="check"  type="checkbox" value="notify" onchange="settings.no_of_times();">
+            <div id="notify" > 
+           <label>Notifications Needed?</input>
+            </div>
+    </div>
+    <div  data-bb-type="label-control-container" id='new'>      
+           <div data-bb-type="row" >
+              <div data-bb-type="label">No. of notifications per day
+               </div><input id="not_count" type="number" />
+          </div>
+    </div>	
+	</div>
+  
+   <div data-bb-type="action-bar" data-bb-back-caption="Back">
+     <div data-bb-type="action" data-bb-style='button' data-bb-img="images/ic_save.png" onclick="settings.validate();">SAVE</div>  
+	</div>
+   
+
+
+</div>
