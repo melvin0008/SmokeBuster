@@ -1,0 +1,19 @@
+<widget id="Smoke Buster" 
+  xmlns:cdv="http://cordova.apache.org/ns/1.0" version="1.1.0.0" 
+  xmlns="http://www.w3.org/ns/widgets">
+  <name>SmokeBuster</name>
+  <description>Want to quit smoking once and for all?? Who says you need rehab? All you need is some determination and this fantastic little app..!     Kill it before it kills you.</description>
+  <author email="melvin0008@gmail.com" href="www.melvinphilips.com">Melvin Philips</author>
+  <content src="index.html"/>
+  <access origin="*"/>
+  <preference name="Orientation" value="portrait"/>
+  <preference name="AutoHideSplashScreen" value="true"/>
+  <preference name="DiskCache" value="enable"/>
+  <icon src="images/icon.png"/>
+  <rim:splash src="images/splash-1280x768.png"/>
+  <rim:splash src="images/splash-720x720.png"/>
+  <license href="Apache"/>
+  <rim:permissions>
+    <rim:permit>bbm_connect</rim:permit>
+  </rim:permissions>
+</widget>
